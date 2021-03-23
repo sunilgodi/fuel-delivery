@@ -1,0 +1,42 @@
+<oj-action-card id="Default"
+    class="oj-bg-neutral-10 oj-sm-margin-2x-top oj-sm-padding-3x  oj-sm-width-full demo-card-content">
+    <div class="oj-flex oj-sm-12 oj-sm-flex-items-initial oj-sm-justify-content-space-around">
+        <div class="oj-flex-item oj-sm-12  oj-sm-padding-2x-horizontal">
+            <span class="oj-typography-heading-lg">
+                <oj-bind-text value="[[valuePerLtr]]">
+
+                </oj-bind-text>
+            </span class="oj-typography-body-2">
+            <span>
+                /per ltr
+            </span>
+        </div>
+
+    </div>
+
+
+</oj-action-card>
+<div class="oj-divider-bottom oj-flex oj-sm-12 oj-sm-margin-4x-top oj-sm-flex-items-initial oj-sm-justify-content-space-around">
+    <div class="oj-flex-item  oj-sm-5 oj-sm-align-self-center">
+        <oj-input-number raw-value="{{rawValue}}" 
+        on-raw-value-changed="[[rawValueChanged]]"
+        
+        value="12" id="quantity" label-hint="quantity" 
+              step=2></oj-input-number>
+    </div>
+    <div class="oj-divider-start  oj-sm-padding-10x-vertical">
+        &nbsp;
+    </div>
+    <div class="oj-flex-item oj-sm-5 oj-sm-align-self-center">
+       <span>
+           Amount
+       </span>
+       <br>
+       <span class="oj-typography-heading-lg">
+        <oj-bind-text value="[[priceVal]]">
+
+        </oj-bind-text>
+    </span>
+    </div>
+    
+</div>

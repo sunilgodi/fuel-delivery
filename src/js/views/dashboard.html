@@ -1,0 +1,25 @@
+<!--
+ Copyright (c) 2014, 2021, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding oj-sm-padding-0">
+  <oj-tab-bar class="oj-bg-color " edge="top" data="[[dataProvider]]" 
+  on-selection-changed="[[tabChanged]]"
+  selection="{{selectedItem}}">
+    <template slot="itemTemplate" data-oj-as="item">
+     
+        <li :id="[[item.data.name]]">
+          <a href="#">
+            <oj-bind-text value="[[item.data.name]]"></oj-bind-text>
+          </a>
+        </li>
+      
+    </template>
+  </oj-tab-bar>
+  <div id="pageContent" class="oj-sm-width-full">
+    <oj-module config="[[module.koObservableConfig]]"></oj-module>
+  </div>
+  
+</div>
+</div>
