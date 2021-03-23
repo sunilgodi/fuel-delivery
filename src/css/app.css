@@ -1,0 +1,29 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+.sendOffScreen {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.oj-bg-color{
+  background: gold;
+}
+.oj-divider-bottom, .oj-divider-start {
+  border-bottom: 1px solid rgb(22 21 19 / 86%) !important;
+}
+.oj-divider-start {
+  border-bottom: 1px solid rgb(22 21 19 / 86%) !important;
+}
+html:not([dir="rtl"]) .oj-divider-start, html:not([dir="rtl"]) .oj-border-start {
+  border-left: 1px solid rgb(20 21 19 / 86%) !important;
+}
