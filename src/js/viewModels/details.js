@@ -20,11 +20,11 @@ define(['accUtils','knockout',  "ojs/ojconverter-number",
         "oil":50.45
       };
       this.priceVal = ko.observable(76);
-      this.rawValue = ko.observable(67);
+      this.rawValue = ko.observable(1);
      var self = this;
      this.rawValueChanged = function(event){
         console.log(event.detail.value);
-        self.priceVal(parseFloat(event.detail.value) * parseFloat(self.valuePerLtr))
+        self.priceVal((parseFloat(event.detail.value) * parseFloat(self.valuePerLtr)).toFixed(2))
      }
 
      this.decimalHalfUpGroupRoundConverter = new NumberConverter.IntlNumberConverter({
